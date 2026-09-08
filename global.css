@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+:root {
+  /* Overlay layers */
+  --z-overlay: 400;
+
+  --z-spotlight: 1000; /* Tutorial spotlights/guided help */
+
+  /* System layers */
+  --z-critical: 2000; /* Critical system notifications */
+
+  /* spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+}
+
+:root {
+  /* Elevated Clinical Palette */
+  --background: #F4F7F7; /* Very light cool-warm gray/bone */
+  --foreground: #11181A; /* Deep slate ink */
+
+  --surface: #FFFFFF; /* Pure white for dictation pads and cards */
+  --surface-foreground: #11181A;
+  
+  --sidebar: #EBEFEF;
+  --sidebar-foreground: #1A2B2D;
+  
+  --card: #FFFFFF;
+  --card-foreground: #11181A;
+  
+  --popup: #FFFFFF;
+  --popup-foreground: #11181A;
+
+  /* Deep Dental Teal */
+  --primary: #125B60;
+  --primary-foreground: #FFFFFF;
+  
+  /* Muted Teal-Gray for secondary actions */
+  --secondary: #E2EAEB;
+  --secondary-foreground: #125B60;
+  
+  /* Warm Coral for Recording/Dictation Active States */
+  --accent: #D96C58;
+  --accent-foreground: #FFFFFF;
+  
+  --muted: #E4E9E9;
+  --muted-foreground: #5A6C6E;
+  
+  --success: #2A7A5F;
+  --success-foreground: #FFFFFF;
+  
+  --error: #C94A4A;
+  --error-foreground: #FFFFFF;
+  
+  --warning: #D98C3A;
+  --warning-foreground: #FFFFFF;
+  
+  --info: #2B6B8A;
+  --info-foreground: #FFFFFF;
+  --info-hover: #235A75;
+  --info-active: #1C4A60;
+
+  --border: #D5DEDE;
+
+  /* Typography: Dependable Serif + Technical Sans */
+  --font-family-base: "IBM Plex Sans", system-ui, sans-serif;
+  --font-family-display: "Newsreader", Georgia, serif;
+  --font-family-monospace: "IBM Plex Mono", monospace;
+  --font-family-cursive: cursive;
+
+  /* Border Radius: Structured but approachable */
+  --radius-sm: 0.25rem;
+  --radius: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+
+  /* Shadows: Crisp, slightly cool-tinted */
+  --shadow-sm: 0 1px 2px rgba(18, 91, 96, 0.04);
+  --shadow: 0 2px 4px rgba(18, 91, 96, 0.04), 0 4px 8px rgba(18, 91, 96, 0.02);
+  --shadow-md: 0 4px 6px rgba(18, 91, 96, 0.04), 0 8px 16px rgba(18, 91, 96, 0.04);
+  --shadow-lg: 0 10px 24px rgba(18, 91, 96, 0.06), 0 20px 48px rgba(18, 91, 96, 0.04);
+  --shadow-focus: 0 0 0 3px rgba(18, 91, 96, 0.15);
+
+  /* Animation */
+  --animation-duration-fast: 150ms;
+  --animation-duration-normal: 250ms;
+  --animation-duration-slow: 350ms;
+
+  /* Chart colors: Clinical and distinct */
+  --chart-color-1: #125B60; /* Primary Teal */
+  --chart-color-2: #D96C58; /* Coral */
+  --chart-color-3: #2A7A5F; /* Sage */
+  --chart-color-4: #D98C3A; /* Amber */
+  --chart-color-5: #2B6B8A; /* Slate Blue */
+}
+
+.dark {
+  /* X-Ray Room / Dark Clinical Mode */
+  --background: #0B1112;
+  --foreground: #E4E9E9;
+
+  --surface: #131D1E;
+  --surface-foreground: #E4E9E9;
+  
+  --sidebar: #0F1718;
+  --sidebar-foreground: #D5DEDE;
+  
+  --card: #131D1E;
+  --card-foreground: #E4E9E9;
+  
+  --popup: #1A2628;
+  --popup-foreground: #E4E9E9;
+
+  --primary: #429E9D;
+  --primary-foreground: #0B1112;
+  
+  --secondary: #1A2B2D;
+  --secondary-foreground: #429E9D;
+  
+  --accent: #E28675;
+  --accent-foreground: #0B1112;
+  
+  --muted: #1A2628;
+  --muted-foreground: #8A9D9F;
+  
+  --border: #243638;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.5), 0 20px 48px rgba(0, 0, 0, 0.4);
+  --shadow-focus: 0 0 0 3px rgba(66, 158, 157, 0.25);
+
+  --chart-color-1: #429E9D;
+  --chart-color-2: #E28675;
+  --chart-color-3: #45A582;
+  --chart-color-4: #E5A85C;
+  --chart-color-5: #4A95B8;
+}
